@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEBD 172 Movie Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>WEBD 172 Movie Portal</h1>
+    <p>A complete Node.js + Express demonstration</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Available Movies</h2>
+      <button id="loadMovies">
+        Load Movies
+      </button>
+      <div id="movies"></div>
+    </section>
+
+    <section>
+      <h2>Find a Movie by ID</h2>
+      <form id="moviesForm">
+        <label for="moviesId">Movie ID:</label>
+        <input id="moviesId" type="number" min="1" required>
+        <button type="submit">Find Movie</button>
+      </form>
+      <div id="moviesResult"></div>
+    </section>
+
+    <section>
+      <h2>Express-Generated Page</h2>
+      <p><a href="/about">Visit the About route</a></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
